@@ -25,17 +25,22 @@ public class FizzBuzz {
 public static void main(String[] args) {
 	for(int i =1; i<21; i++) {
 		
+	if (i % 15==0) {
+		System.out.print("fizzbuzz ");
 	
-		if(i % 3==0) {
+	}
+	else if(i % 3==0) {
 			
-			JOptionPane.showMessageDialog(null,"fizz ");
+			System.out.print("fizz ");
 		}
-		if(i % 5==0) {
-			JOptionPane.showMessageDialog(null, "buzz");
+		else if(i % 5==0) {
+		System.out.print("buzz ");	 
 		}
 		
 		 
-	System.out.print(i+" " );
+		else  {
+			System.out.print(i+" " );}
+		}
 	}	
 			
 		}
@@ -44,5 +49,5 @@ public static void main(String[] args) {
 	
 	
 
-}
+
 
